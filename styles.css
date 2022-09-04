@@ -420,18 +420,27 @@ img {vertical-align: middle;}
   margin-bottom: 0;
 }
 
-.goal{
+.goals{
   text-align: center;
   font-size: var(--size-800);
-  
+  background-color: hsl(13, 100%, 96%);
 }
 
-.goal::after{
+
+
+.goal{
+  text-align: center;
+  font-size: var(--size-400);
+  background-color: hsl(13, 100%, 96%);
+ 
+}
+
+.goals::after{
   content: '';
   display: block;
-  width: 3em;
+  width: 4.5em;
   height: 2px;
-  margin: 0.5em auto 1em;
+  margin: 0.0001em auto 1em;
   background: black;
   opacity: 0.5;
 }
