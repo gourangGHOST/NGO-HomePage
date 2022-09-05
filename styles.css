@@ -92,7 +92,7 @@ body {
 }
 
 .para {
-  opacity: 0.65;
+  font-size: var(--fs-600);
   max-width: 55ch;
 }
 
@@ -376,21 +376,22 @@ img {vertical-align: middle;}
 
 
 .marque{
-  background-color: black;
   display: block;
   color: #f2f2f2;
-  padding: 0;
+  padding-bottom: 5%;
+  padding-top: 1%; 
   margin: 0;
 }
 
 /* about */
 
 .home-intro {
-  padding: 50vh 0;
+  padding-bottom: 5rem;
   background: #123 url(https://unsplash.it/900);
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
+  
 }
 
 
@@ -446,7 +447,8 @@ img {vertical-align: middle;}
 .goals{
   text-align: center;
   font-size: var(--size-800);
-  background-color: hsl(13, 100%, 96%);
+  background-color: #fff;
+  padding-top: 3.5rem;
 }
 
 
@@ -454,8 +456,7 @@ img {vertical-align: middle;}
 .goal{
   text-align: center;
   font-size: var(--size-400);
-  background-color: hsl(13, 100%, 96%);
- 
+  background-color: #fff;
 }
 
 .goals::after{
@@ -473,7 +474,7 @@ img {vertical-align: middle;}
   justify-content: center;
   padding: 3rem; 
   margin-top: -64px; 
-  background-color: hsl(13, 100%, 96%);
+  background-color: #fff;
 }
 
 .grid {
@@ -866,6 +867,7 @@ img {vertical-align: middle;}
 .padding-block-700 {
   padding-block: var(--size-700);
 }
+
 
 .display-sm-none {
   display: none;
