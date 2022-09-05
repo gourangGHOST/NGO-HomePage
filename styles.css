@@ -320,7 +320,7 @@ img {vertical-align: middle;}
   position: relative;
   width: 100%;
   margin: auto;
-  z-index: -1;
+  z-index: 4;   /* -1 */
 }
 
 /* Caption text */
@@ -372,6 +372,25 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+
+.marque{
+  background-color: black;
+  display: block;
+  color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+/* background */
+
+.home-intro {
+  padding: 50vh 0;
+  background: #123 url(https://unsplash.it/900);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
 }
 
 
