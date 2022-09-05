@@ -12,6 +12,7 @@
 
 
 </head>
+
 <body>
   <header class="primary-header">
     <div class="container">
@@ -35,7 +36,6 @@
     </div>
   </header>
 
-
   <main>
     <marquee class="marque" width="100%" direction="left" height="30px" style="font-size: 20px">
       This is a sample scrolling text that has scrolls texts to left.
@@ -44,11 +44,11 @@
       <div class="container">
         <div class="even-columns">
           <div class="flow">
-            <h1 class="fs-secondary-heading fw-bold">“There are people in the world so hungry, that God cannot appear to
+            <h1 class="text-animation | fs-secondary-heading fw-bold">“There are people in the world so hungry, that God cannot appear to
               them except in the form of bread.”
-              ~ Mohandas Karamchand Gandhi.
+              <h2>~ Mohandas Karamchand Gandhi.</h2>
             </h1>
-            <p>It's 1st of August; we all had a meeting about what should be our first step after formally registering
+            <p class="para">It's 1st of August; we all had a meeting about what should be our first step after formally registering
               "Aadi Foundation" as an NGO. We were scrambling with innovative ideas, but later on, we agreed upon
               keeping it plain and simple. The first step on the list was to arrange funds, all our members contributed
               and got some online donations; very thankful to you guys for all your efforts we were able to do some
@@ -135,6 +135,9 @@
 
 
 
+
+
+
     <!-- <section class="text-gray-600 body-font bg-orange-400">
       <div class="container px-5 py-0 mx-auto">
         <section class="text-gray-600 body-font">
@@ -215,7 +218,7 @@
       </div>
       <div class="container1">
         <div class="grid">
-          <div class="profile">
+          <div class="profile | container reveal fade-bottom">
             <img class="profile-picture" src="Img/IMG_0079.JPG">
             <p class="name">
               Heading
@@ -232,7 +235,7 @@
             </button> -->
           </div>
 
-          <div class="profile">
+          <div class="profile | container reveal fade-bottom">
             <img class="profile-picture" src="Img/IMG_0044.JPG">
             <p class="name">
               Heading
@@ -249,7 +252,7 @@
             </button> -->
           </div>
 
-          <div class="profile">
+          <div class="profile | container reveal fade-bottom">
             <img class="profile-picture" src="Img/IMG_0079.JPG">
             <p class="name">
               Heading
@@ -267,8 +270,31 @@
           </div>
         </div>
       </div>
-
     </section>
+
+
+    <section class="ani">
+      <div class="context">
+        <h2> NAME OF FOUNDER</h2>
+        <h3> SUB-HEADING</h3>
+        <p>It's 1st of August; we all had a meeting about what should be our first step after formally registering
+          "Aadi Foundation" as an NGO. We were scrambling with innovative ideas, but later on, we agreed upon
+          keeping it plain and simple. The first step on the list was to arrange funds, all our members contributed
+          and got some online donations; very thankful to you guys for all your efforts we were able to do some</p>
+      </div>
+    </section>
+
+    <section class="ani">
+      <div class="context">
+        <h2> NAME OF FOUNDER</h2>
+        <h3> SUB-HEADING</h3>
+        <p>It's 1st of August; we all had a meeting about what should be our first step after formally registering
+          "Aadi Foundation" as an NGO. We were scrambling with innovative ideas, but later on, we agreed upon
+          keeping it plain and simple. The first step on the list was to arrange funds, all our members contributed
+          and got some online donations; very thankful to you guys for all your efforts we were able to do some</p>
+      </div>
+    </section>
+
 
 
     <!--Footer-->
@@ -300,9 +326,16 @@
 
     <!-- JavaScript -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="app.js"></script>
 
-
+    
+    
+    <script src="scroll-out.js"></script>
+    <script type="text/javascript">
+      ScrollOut({
+        targets: 'h2,h3,p' 
+      })
+    </script>
+<script src="app.js"></script>
 
 </body>
 
