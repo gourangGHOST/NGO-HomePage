@@ -18,6 +18,7 @@ navToggle.addEventListener("click", () => {
 })
 
 
+//read more button
 
 function myFunction() {
   const dots = document.getElementById("dots");
@@ -37,6 +38,7 @@ function myFunction() {
 
 
 
+//slideshow animations and dots
 
 let slideIndex = 0;
 showSlides();
@@ -60,6 +62,8 @@ function showSlides() {
 
 
 
+//text reveal animation
+
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -77,3 +81,23 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+/* Smooth scroll */
+
+function scrollToId(id) {
+  const coords = getOffset(document.getElementById(id))
+  console.log(coords)
+  window.scrollTo({
+    top: coords.top,
+    behavior: 'smooth'
+  })
+}
+
+function getOffset(el) {
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY
+  };
+}
