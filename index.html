@@ -5,6 +5,7 @@
   <title>Aadi Foundation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="swiper-bundle.min.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="apple-touch-icon" sizes="180x180" href="Img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="Img/favicon-32x32.png">
@@ -213,6 +214,73 @@
 
 
 
+    <!--==================== EVENT ====================-->
+    <section class="event-body">
+      <section class="portfolio events-body" id="event">
+        <h2 class="events__title">Events</h2>
+        <span class="events__subtitle">Most recent events</span>
+
+        <div class="events__container container-event swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--==================== EVENT 1 ====================-->
+            <div class="event__content event-grid swiper-slide">
+              <img src="./Img/team.JPG" alt="" class="event__img">
+
+              <div class="event__data">
+                <h3 class="event__heading">Event name 1</h3>
+                <p class="event__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar placerat erat a vulputate. Nullam maximus, metus a vulputate porta, augue metus facilisis dolor, t</p>
+                <a href="#" class="button button--flex button--small portfolio--button">
+                  On-going events
+                  <i class='bx bx-right-arrow-alt button__icon'></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== EVENT 2 ====================-->
+            <div class="event__content event-grid swiper-slide">
+              <img src="./Img/team.JPG" alt="" class="event__img">
+
+              <div class="event__data">
+                <h3 class="event__heading">Event name 2</h3>
+                <p class="event__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar placerat erat a vulputate. Nullam maximus, metus a vulputate porta, augue metus facilisis dolor, t</p>
+                <a href="#" class="button button--flex button--small portfolio--button">
+                  On-going events
+                  <i class='bx bx-right-arrow-alt button__icon'></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== EVENT 3 ====================-->
+            <div class="event__content event-grid swiper-slide">
+              <img src="./Img/team.JPG" alt="" class="event__img">
+
+              <div class="event__data">
+                <h3 class="event__heading">Event name 3</h3>
+                <p class="event__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar placerat erat a vulputate. Nullam maximus, metus a vulputate porta, augue metus facilisis dolor, t</p>
+                <a href="#" class="button button--flex button--small portfolio--button">
+                  On-going events
+                  <i class='bx bx-right-arrow-alt button__icon'></i>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          <!--add arrows -->
+          <div class="swiper-button-next">
+            <i class='bx bx-chevron-right swiper-portfolio-icon' ></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class='bx bx-chevron-left swiper-portfolio-icon' ></i>
+          </div>
+          
+          <!--add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+          
+      </section>
+    </section>
+
+
+
+
     <!--Footer-->
 
 <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100" id="contact">
@@ -271,7 +339,7 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     
-    
+    <script src="swiper-bundle.min.js"></script>
     <script src="scroll-out.js"></script>
     <script type="text/javascript">
       ScrollOut({
