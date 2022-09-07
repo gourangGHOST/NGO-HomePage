@@ -413,14 +413,14 @@ img {vertical-align: middle;}
 .goals{
   text-align: center;
   font-size: var(--size-800);
-  background-color: #fff;
+  background-color: hsl(250, 60%, 99%);
   padding-top: 3.5rem;
 }
 
 .goal{
   text-align: center;
   font-size: var(--size-400);
-  background-color: #fff;
+  background-color: hsl(250, 60%, 99%);
 }
 
 .goals::after{
@@ -438,7 +438,7 @@ img {vertical-align: middle;}
   justify-content: center;
   padding: 3rem;
   margin-top: -64px;
-  background-color: #fff;
+  background-color: hsl(250, 60%, 99%);
 }
 
 .grid {
