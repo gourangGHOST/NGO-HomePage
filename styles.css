@@ -204,7 +204,7 @@ body {
 }
 
 
-/* navigation */
+/*==================== NAVBAR  ====================*/
 
 .logo {
   cursor: pointer;
@@ -305,7 +305,7 @@ body {
 }
 
 
-/* footer */
+/*==================== FOOTER LOGO ====================*/
 
 .brand-name{
   display: flex;
@@ -321,7 +321,7 @@ body {
 
 
 
-/* slideshowautomatic */
+/*==================== AUTOMATIC SLIDERSHOW  ====================*/
 
 
 .mySlides {display: none;}
@@ -395,7 +395,7 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-/* about */
+/*==================== REVEAL PAGE BG  ====================*/
 
 .home-intro {
   padding-bottom: 5rem;
@@ -408,7 +408,7 @@ img {vertical-align: middle;}
 
 
 
-/*goals*/
+/*==================== GOALS  ====================*/
 
 .goals{
   text-align: center;
@@ -517,7 +517,7 @@ img {vertical-align: middle;}
 
 }
 
-/*Hover me*/
+/*==================== GOALS HOVER ME  ====================*/
 
 .profile{
   background:white;
@@ -542,7 +542,7 @@ img {vertical-align: middle;}
 
 
 
-/*founder page*/
+/*==================== FOUNDERS PAGE  ====================*/
 
 .contain {
   --max-width: 1110px;
@@ -687,7 +687,7 @@ img {vertical-align: middle;}
 } */
 
 
-/* Goals animation*/
+/*==================== REVEAL ANIMATIONA AT GOALS  ====================*/
 
 .reveal-ani {
   min-height: 100vh;
@@ -771,7 +771,7 @@ img {vertical-align: middle;}
 
 
 
-/* footer */
+/*==================== FOOTER  ====================*/
 
 .primary-footer {
   --logo-color: var(--clr-neutral-100);
@@ -835,7 +835,7 @@ input:where([type="text"], [type="email"], ) {
   }
 }
 
-/* footer navigation */
+/*==================== FOOTER NAVIGATIONS  ====================*/
 
 .footer-nav {
   columns: 2;
@@ -852,7 +852,7 @@ input:where([type="text"], [type="email"], ) {
 }
 
 
-/* social list */
+/*==================== SOCIAL LIST  ====================*/
 
 .social-list {
   display: flex;
