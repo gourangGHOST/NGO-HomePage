@@ -1,4 +1,4 @@
-/* reload to top */
+/*==================== Reload to top  ====================*/
 window.onbeforeunload = function () {
   window.scrollTo({
     top: 0
@@ -18,7 +18,7 @@ navToggle.addEventListener("click", () => {
 })
 
 
-//read more button
+/*==================== READ MORE AND LESS BUTTON  ====================*/
 
 function myFunction() {
   const dots = document.getElementById("dots");
@@ -38,7 +38,7 @@ function myFunction() {
 
 
 
-//slideshow animations and dots
+/*==================== SLIDERSHOW ANIMATIONS AND DOTS  ====================*/
 
 let slideIndex = 0;
 showSlides();
@@ -62,7 +62,7 @@ function showSlides() {
 
 
 
-//text reveal animation
+/*==================== TEXT REVEAL ANIMATION  ====================*/
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -83,7 +83,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-/* Smooth scroll */
+/*==================== SMOOTH SCROLLING  ====================*/
 
 function scrollToId(id) {
   const coords = getOffset(document.getElementById(id))
@@ -103,7 +103,7 @@ function getOffset(el) {
 }
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*====================  SWIPER  ====================*/
 let swiper = new Swiper(".events__container", {
   cssMode: true,
   loop:true,
