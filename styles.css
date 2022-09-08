@@ -969,11 +969,12 @@ input:where([type="text"], [type="email"], ) {
 }
 
 .swiper-button-prev{
+  margin-left: -10px;
   left: -.5rem;
 }
 
 .swiper-button-next{
-
+  margin-right: -10px;
   right: -.5rem;
 }
 
