@@ -214,7 +214,7 @@ body {
 
 
 .primary-header {
-  background-color: antiquewhite;
+  background-color: #3ab4f2;
   padding: 10px;
 }
 
@@ -240,12 +240,14 @@ body {
 
 .nav-list a {
   text-decoration: none;
+  cursor: pointer;
   color: var(--clr-primary-400);
 }
 
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--clr-accent-400);
+  transition: 0.2s;
 }
 
 
