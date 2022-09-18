@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 :root {
   --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
@@ -9,7 +10,7 @@
   --clr-neutral-900: hsl(232, 12%, 13%);
   --clr-neutral-100: hsl(0 0% 100%);
 
-  --ff-primary: "Be Vietnam Pro", sans-serif;
+  --ff-primary: "poppins", sans-serif;
 
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
@@ -136,7 +137,7 @@ svg {
   --max-width: 1110px;
   --padding: 1rem;
 
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  width: min(var(--max-width), 100% - (var(--padding) * 2)) !important;
   margin-inline: auto;
 }
 
@@ -206,105 +207,99 @@ body {
 
 /*==================== NAVBAR  ====================*/
 
-.logo {
-  cursor: pointer;
-  width: 80px;
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s linear;
+}
+
+
+.nav-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  background: #3ab4f2;
+}
+
+.navbar {
+  padding-top: 10px;
+}
+.nav-item {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 12px !important;
+  padding: 0 0 5px 0 !important;
+  display: unset !important;
+  /* font-size: 15px !important; */
+}
+.navbar-brand img {
+  width: 62px;
+  border-radius: 50%;
+  margin-left: 150px;
+}
+.fa-solid {
+  font-size: 40px !important;
+  color: #fff;
+}
+.navbar-toggler {
+  border: 0px;
+  outline: none;
+  padding: initial;
+}
+.active {
+  border-bottom: 2px solid #fff;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #fff;
+}
+/* CSS for donation Page */
+.nav-links {
+  margin-left: 50px !important;
+  margin-right: 20px;
+  padding: 20px;
+  background: orange;
   border-radius: 50px;
-}
-
-
-.primary-header {
-  background-color: #3ab4f2;
-  padding: 10px;
-}
-
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.mobile-nav-toggle {
-  display: none;
-}
-
-.nav-list {
-  font-size: var(--size-400);
-}
-
-.nav-list {
-  display: flex;
-  gap: clamp(var(--size-400), 5vw, var(--size-700));
-  font-weight: var(--fw-semi-bold);
-}
-
-.nav-list a {
   text-decoration: none;
-  cursor: pointer;
-  color: var(--clr-primary-400);
+  color: #fff;
 }
-
-.nav-list a:hover,
-.nav-list a:focus {
-  color: var(--clr-accent-400);
-  transition: 0.2s;
+.nav-links:hover {
+  background: #fff;
+  color: orange !important;
 }
+/* NAVBAR END HERE */
 
-
-@media(max-width: 50em) {
-  .primary-navigation {
-    display: none;
-    z-index: 999;
-
-    position: fixed;
-    max-width: 25rem;
-    margin-inline: auto;
-    padding: var(--size-700);
-    inset: 7rem var(--size-400) auto;
-    background: var(--clr-neutral-100);
-    border-radius: var(--size-100);
-    box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.125);
-  }
-
-  .primary-header[data-overlay]::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
-  }
-
-  .nav-list {
-    display: grid;
-
-    gap: var(--size-600);
-    text-align: center;
-    font-weight: var(--fw-bold);
-  }
-
-  .primary-navigation[data-visible] {
-    display: block;
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-    position: fixed;
-    top: var(--size-700);
-    right: var(--size-400);
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    padding: 0.5em;
-  }
-
-  .mobile-nav-toggle .icon-close {
-    display: none;
+/* * MEDIA */
+@media screen and (max-width: 900px) {
+  .navbar-brand img {
+    width: 62px;
+    border-radius: 50%;
+    margin-left: 50px;
   }
 }
 
-.opened {
-  display: block;
-  position: fixed;
+@media screen and (max-width: 1300px) {
+  .nav-links {
+    margin-left: 00px !important;
+    margin-right: 00px;
+    padding: 10px;
+    background: orange;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: 10px;
+    font-size: 10px;
+  }
+  .nav-links:hover {
+    background: #fff;
+    color: orange !important;
+  }
 }
+
 
 
 /*==================== FOOTER LOGO ====================*/
@@ -319,6 +314,11 @@ body {
   font-size: var(--size-400);
 }
 
+.logo {
+  cursor: pointer;
+  width: 80px;
+  border-radius: 50px;
+}
 
 
 
@@ -401,7 +401,7 @@ img {vertical-align: middle;}
 
 .home-intro {
   padding-bottom: 5rem;
-  background: #123 url(https://unsplash.it/900);
+  background: rgb(108, 126, 150) url(https://unsplash.it/900);
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
@@ -451,7 +451,7 @@ img {vertical-align: middle;}
  }
 
 .profile {
-  width: 100%;
+  width: 100% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   vertical-align: top;
   margin-right: 15px;
@@ -459,10 +459,10 @@ img {vertical-align: middle;}
 }
 
 .profile-picture {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  margin-bottom: 12px;
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  margin-bottom: 12px !important;
 }
 
 .name {
@@ -877,7 +877,7 @@ input:where([type="text"], [type="email"], ) {
 
 
 
-/*==================== PORTFOLIO ====================*/
+/*==================== EVENT ====================*/
 
 .event-body {
   margin: 0 0 3rem 0;
@@ -924,7 +924,7 @@ input:where([type="text"], [type="email"], ) {
   margin-bottom: 60px;
 }
 
-/*==================== PORTFOLIO ====================*/
+/*==================== EVENT ====================*/
 
 .events__container{
   overflow: initial;
@@ -1143,6 +1143,10 @@ input:where([type="text"], [type="email"], ) {
 
 .bg-neutral-900 {
   background-color: var(--clr-neutral-900);
+}
+
+.bg-neutral-1000 {
+  background-color: #3ab4f2;
 }
 
 .fw-bold {
